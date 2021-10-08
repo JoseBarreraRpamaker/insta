@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+from posts import views as posts_views
+import posts
+
+def hola_mundo(request):
+    return HttpResponse("hola como estan")
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
+     path('hola/',hola_mundo),
+     path('posts/',posts_views.list_posts),
+
 ]
