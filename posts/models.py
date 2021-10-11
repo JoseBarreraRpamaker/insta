@@ -1,4 +1,5 @@
 from django.db import models
+from django.db.models.base import Model
 from django.db.models.fields import EmailField
 
 class Users(models.Model):
@@ -15,3 +16,6 @@ class Users(models.Model):
     modifa = models.DateTimeField(auto_now= True)
 
 
+class Persona(models.Model):
+    nombre = models.CharField(max_length=10)
+    email = models.EmailField(unique=True)
