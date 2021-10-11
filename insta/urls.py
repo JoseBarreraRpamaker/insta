@@ -27,5 +27,6 @@ urlpatterns = [
     #path('admin/', admin.site.urls),
      path('hola/',hola_mundo),
      path('posts/',posts_views.list_posts),
+      
 
 ]

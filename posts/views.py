@@ -7,8 +7,6 @@ from datetime import datetime
 
 
 
-
-
 posts = [
     {
         'title': 'Mont Blanc',
@@ -42,4 +40,4 @@ posts = [
 
 def list_posts(request):
    
-    return render(request,'feed.html', {'posts': posts})
+    return render(request,'templates/feed.html', {'posts': posts})
