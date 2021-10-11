@@ -40,4 +40,4 @@ posts = [
 
 def list_posts(request):
    
-    return render(request,'templates/feed.html', {'posts': posts})
+    return render(request,'posts/feed.html', {'posts': posts})

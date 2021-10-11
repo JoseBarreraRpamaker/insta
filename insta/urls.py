@@ -14,10 +14,9 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path , include
 from django.http import HttpResponse
-from posts import views as posts_views
-import posts
+
 
 def hola_mundo(request):
     return HttpResponse("hola como estan")
@@ -26,7 +25,7 @@ def hola_mundo(request):
 urlpatterns = [
     #path('admin/', admin.site.urls),
      path('hola/',hola_mundo),
-     path('posts/',posts_views.list_posts),
+     path('',include('posts.urls'))
       
 
 ]

@@ -15,7 +15,3 @@ class Users(models.Model):
     modifa = models.DateTimeField(auto_now= True)
 
 
-
-
-class Tabla_pueba(models.Model):
-    campo1 = models.CharField(max_length=200)
