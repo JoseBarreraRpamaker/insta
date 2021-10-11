@@ -23,7 +23,7 @@ def hola_mundo(request):
 
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
+     path('admin/', admin.site.urls),
      path('hola/',hola_mundo),
      path('',include('posts.urls'))
       
