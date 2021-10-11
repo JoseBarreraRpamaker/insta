@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'posts'
+
 ]
 
 MIDDLEWARE = [
@@ -53,6 +56,8 @@ ROOT_URLCONF = 'insta.urls'
 
 TEMPLATES = [
     {
+
+        
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
         'APP_DIRS': True,
@@ -76,7 +81,7 @@ WSGI_APPLICATION = 'insta.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':'django.db.backends.postgresql',
-        'NAME': 'Insta',
+        'NAME': 'insta',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': 'localhost',
