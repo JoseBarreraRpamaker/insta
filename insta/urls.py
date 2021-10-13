@@ -30,8 +30,10 @@ urlpatterns = [
      path('admin/', admin.site.urls),
      path('hola/',hola_mundo),
      path('',include('posts.urls')),
-     path('users/login/', users_views.login_view)
+     path('users/login/', users_views.login_view, name='login')
     
       
 
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+
