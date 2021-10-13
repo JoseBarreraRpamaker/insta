@@ -29,8 +29,9 @@ def hola_mundo(request):
 urlpatterns = [
      path('admin/', admin.site.urls),
      path('hola/',hola_mundo),
+     path('users/login/', users_views.login_view, name='login'),
      path('',include('posts.urls')),
-     path('users/login/', users_views.login_view, name='login')
+     
     
       
 
