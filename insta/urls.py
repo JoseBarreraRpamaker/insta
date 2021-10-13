@@ -30,7 +30,9 @@ urlpatterns = [
      path('admin/', admin.site.urls),
      path('hola/',hola_mundo),
      path('users/login/', users_views.login_view, name='login'),
+     path('users/signup/', users_views.signup, name='signup'),
      path('',include('posts.urls')),
+
      
     
       
