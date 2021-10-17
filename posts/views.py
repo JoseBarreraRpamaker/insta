@@ -9,7 +9,7 @@ from datetime import datetime
 
 posts = [
     {
-        'title': 'Mont Blanc',
+        'title': 'Mont Blanck',
         'user': {
             'name': 'Yésica Cortés',
             'picture': 'https://picsum.photos/60/60/?image=1027'
